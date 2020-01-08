@@ -33,7 +33,7 @@ Página que exibe uma lista dos produtos de uma categoria específica, de uma bu
 
 Estrutura exemplo:
 
-```html
+```handlebars
 {{#list_page}}
   {{#search_page}}<!-- se estiver numa página de resultado de busca -->
     {{search_term}}<!-- exibe o termo que foi pesquisado -->
@@ -79,7 +79,7 @@ Página que exibe os detalhes de um produto.
 
 Estrutura exemplo:
 
-```html
+```handlebars
 {{#product_page}}
   {{#with product}}
     {{url}}
@@ -129,7 +129,7 @@ Página que exibe o carrinho e o botão de fechamento de pedido.
 
 Estrutura exemplo:
 
-```html
+```handlebars
 {{#cart_page}}
   {{information}}
   {{#with cart}}
@@ -163,7 +163,7 @@ Conteúdo de página não encontrada.
 
 Estrutura exemplo:
 
-```html
+```handlebars
 {{#not_found_page}}
   <div class="alert"> Página não encontrada </div>
 {{/not_found_page}}
@@ -184,7 +184,7 @@ Tags usadas para compor o menu, como links para as páginas da loja e campo de b
 - `{{cart_count}}` Número de ítens no carrinho.
 - `{{search_form}}` Exibe formulário de busca de produtos.
 
-```html
+```handlebars
 <ul class="nav">
   <li class="{{#if all_products_page}}selected{{/if}}">
     <a href="{{products_url}}">produtos</a>
@@ -234,7 +234,7 @@ Exemplos de usos da ferramenta de redimensionamento
 
 Aplicação das tags
 
-```html
+```handlebars
 <!-- Renderiza a logo do Google para que caiba dentro de uma área de 400x300px. -->
 {{resize_image "https://www.google.com/images/srpr/logo11w.png" "400x300"}}
 <!-- Renderiza a logo do tema para que tenha 400px de largura. -->
